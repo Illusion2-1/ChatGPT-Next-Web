@@ -119,7 +119,7 @@ export function SideBar(props: { className?: string }) {
       }`}
     >
       <div className={styles["sidebar-header"]}>
-        <div className={styles["sidebar-title"]}>Illusion's GPT</div>
+        <div className={styles["sidebar-title"]}>Illusion&apos;s GPT</div>
         <div className={styles["sidebar-sub-title"]}>
           We soar, we roar, from afar.
         </div>

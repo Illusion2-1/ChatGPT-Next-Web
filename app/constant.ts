@@ -246,14 +246,6 @@ export const DEFAULT_MODELS = [
       providerName: "Google",
       providerType: "google",
     },
-  },
-  {
-    name: "text-davinci-003",
-    available: true,
-  },
-  {
-    name: "text-embedding-ada-002",
-    available: true,
   }
 ] as const;
 

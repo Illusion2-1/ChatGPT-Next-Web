@@ -182,15 +182,6 @@ export const DEFAULT_MODELS = [
     },
   },
   {
-    name: "openrouter/auto",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
     name: "anthropic/claude-3-haiku:beta",
     available: true,
     provider: {
@@ -317,7 +308,7 @@ export const DEFAULT_MODELS = [
     },
   },
   {
-    name: "",
+    name: "openrouter/auto",
     available: true,
     provider: {
       id: "openai",

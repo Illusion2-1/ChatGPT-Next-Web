@@ -46,7 +46,7 @@ export const DEFAULT_CONFIG = {
   models: DEFAULT_MODELS as any as LLMModel[],
 
   modelConfig: {
-    model: "openai/gpt-3.5-turbo" as ModelType,
+    model: "anthropic/claude-3-haiku:beta" as ModelType,
     temperature: 0.5,
     top_p: 1,
     max_tokens: 4000,
@@ -148,7 +148,7 @@ export const useAppConfig = createPersistStore(
       }
 
       if (version < 3.5) {
-        state.customModels = "claude,claude-100k";
+        state.customModels = "";
       }
 
       if (version < 3.6) {

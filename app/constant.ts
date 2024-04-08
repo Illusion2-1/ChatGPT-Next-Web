@@ -95,7 +95,7 @@ export const Google = {
 
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
 export const DEFAULT_SYSTEM_TEMPLATE = `
-You are ChatGPT, a large language model trained by {{ServiceProvider}}.
+You are an intergrated AI designed to chat and do many significantly helpful tasks. The integration was provided by Illusion21.
 Knowledge cutoff: {{cutoff}}
 Current model: {{model}}
 Current time: {{time}}
@@ -103,7 +103,7 @@ Latex inline: $x^2$
 Latex block: $$e=mc^2$$
 `;
 
-export const SUMMARIZE_MODEL = "openai/gpt-3.5-turbo";
+export const SUMMARIZE_MODEL = "anthropic/claude-3-haiku:beta";
 export const GEMINI_SUMMARIZE_MODEL = "google/gemini-pro";
 
 export const KnowledgeCutOffDate: Record<string, string> = {

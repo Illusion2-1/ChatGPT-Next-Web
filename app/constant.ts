@@ -119,25 +119,7 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 
 export const DEFAULT_MODELS = [
   {
-    name: "openai/gpt-4",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "openai/gpt-4-turbo-preview",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "openai/gpt-4-1106-preview",
+    name: "openai/gpt-4-turbo",
     available: true,
     provider: {
       id: "openai",
@@ -164,16 +146,7 @@ export const DEFAULT_MODELS = [
     },
   },
   {
-    name: "google/gemini-pro",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "google/gemini-pro-vision",
+    name: "google/gemini-pro-1.5",
     available: true,
     provider: {
       id: "openai",
@@ -218,24 +191,6 @@ export const DEFAULT_MODELS = [
     },
   },
   {
-    name: "mistralai/mixtral-8x7b-instruct",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "mistralai/mistral-medium",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
     name: "mistralai/mistral-large",
     available: true,
     provider: {
@@ -245,7 +200,16 @@ export const DEFAULT_MODELS = [
     },
   },
   {
-    name: "lizpreciatior/lzlv-70b-fp16-hf",
+    name: "microsoft/wizardlm-2-8x22b:nitro",
+    available: true,
+    provider: {
+      id: "openai",
+      providerName: "Illusion21",
+      providerType: "openai",
+    },
+  },
+  {
+    name: "huggingfaceh4/zephyr-orpo-141b-a35b",
     available: true,
     provider: {
       id: "openai",
@@ -255,51 +219,6 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "01-ai/yi-34b-chat",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "nousresearch/nous-capybara-7b:free",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "mistralai/mistral-7b-instruct:free",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "gryphe/mythomist-7b:free",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "undi95/toppy-m-7b:free",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "openrouter/cinematika-7b:free",
     available: true,
     provider: {
       id: "openai",

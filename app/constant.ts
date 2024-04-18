@@ -108,27 +108,15 @@ export const GEMINI_SUMMARIZE_MODEL = "google/gemini-pro";
 
 export const KnowledgeCutOffDate: Record<string, string> = {
   default: "2021-09",
-  "openai/gpt-4-turbo-preview": "2023-12",
-  "openai/gpt-4-1106-preview": "2023-04",
-  "openai/gpt-4-0125-preview": "2023-12",
-  "openai/gpt-4-vision-preview": "2023-04",
+  "openai/gpt-4-turbo": "2024-04",
   // After improvements,
   // it's now easier to add "KnowledgeCutOffDate" instead of stupid hardcoding it, as was done previously.
-  "google/gemini-pro": "2023-12",
+  "google/gemini-pro-1.5": "2023-12",
 };
 
 export const DEFAULT_MODELS = [
   {
     name: "openai/gpt-4-turbo",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "openai/gpt-4-vision-preview",
     available: true,
     provider: {
       id: "openai",

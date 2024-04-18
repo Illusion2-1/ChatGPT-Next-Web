@@ -36,7 +36,7 @@ export function Avatar(props: { model?: ModelType; avatar?: string }) {
   if (props.model) {
     return (
       <div className="no-dark">
-        {props.model?.startsWith("openai/gpt-4") ? (
+        {props.model?.startsWith("openai/gpt-4-turbo") ? (
           <BlackBotIcon className="user-avatar" />
         ) : (
           <BotIcon className="user-avatar" />

@@ -197,7 +197,7 @@ export const DEFAULT_MODELS = [
     },
   },
   {
-    name: "huggingfaceh4/zephyr-orpo-141b-a35b",
+    name: "mistralai/mixtral-8x22b",
     available: true,
     provider: {
       id: "openai",

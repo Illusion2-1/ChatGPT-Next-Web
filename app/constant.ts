@@ -188,25 +188,7 @@ export const DEFAULT_MODELS = [
     },
   },
   {
-    name: "microsoft/wizardlm-2-8x22b:nitro",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "mistralai/mixtral-8x22b",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "huggingfaceh4/zephyr-orpo-141b-a35b",
+    name: "microsoft/wizardlm-2-8x22b",
     available: true,
     provider: {
       id: "openai",

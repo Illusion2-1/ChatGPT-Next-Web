@@ -206,6 +206,15 @@ export const DEFAULT_MODELS = [
     },
   },
   {
+    name: "huggingfaceh4/zephyr-orpo-141b-a35b",
+    available: true,
+    provider: {
+      id: "openai",
+      providerName: "Illusion21",
+      providerType: "openai",
+    },
+  },
+  {
     name: "01-ai/yi-34b-chat",
     available: true,
     provider: {

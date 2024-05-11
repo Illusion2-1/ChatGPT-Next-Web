@@ -179,6 +179,15 @@ export const DEFAULT_MODELS = [
     },
   },
   {
+    name: "cohere/command-r",
+    available: true,
+    provider: {
+      id: "openai",
+      providerName: "Illusion21",
+      providerType: "openai",
+    },
+  },
+  {
     name: "mistralai/mistral-large",
     available: true,
     provider: {

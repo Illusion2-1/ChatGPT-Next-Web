@@ -197,7 +197,16 @@ export const DEFAULT_MODELS = [
     },
   },
   {
-    name: "01-ai/yi-34b-chat",
+    name: "qwen/qwen-110b-chat",
+    available: true,
+    provider: {
+      id: "openai",
+      providerName: "Illusion21",
+      providerType: "openai",
+    },
+  },
+  {
+    name: "qwen/qwen-72b-chat",
     available: true,
     provider: {
       id: "openai",

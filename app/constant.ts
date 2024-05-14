@@ -233,6 +233,15 @@ export const DEFAULT_MODELS = [
     },
   },
   {
+    name: "deepseek/deepseek-chat",
+    available: true,
+    provider: {
+      id: "openai",
+      providerName: "Illusion21",
+      providerType: "openai",
+    },
+  },
+  {
     name: "openrouter/auto",
     available: true,
     provider: {

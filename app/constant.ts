@@ -125,6 +125,15 @@ export const DEFAULT_MODELS = [
     },
   },
   {
+    name: "openai/gpt-4o",
+    available: true,
+    provider: {
+      id: "openai",
+      providerName: "Illusion21",
+      providerType: "openai",
+    },
+  },
+  {
     name: "openai/gpt-3.5-turbo",
     available: true,
     provider: {

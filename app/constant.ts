@@ -117,7 +117,7 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 export const DEFAULT_MODELS = [
   {
     name: "openai/gpt-4-turbo",
-    displayName: "GPT4 Turbo",
+    displayName: "GPT4-Turbo",
     available: true,
     provider: {
       id: "openai",
@@ -127,7 +127,7 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "openai/gpt-4o",
-    displayName: "GPT 4o",
+    displayName: "GPT-4o",
     available: true,
     provider: {
       id: "openai",
@@ -137,7 +137,7 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "openai/gpt-3.5-turbo",
-    displayName: "GPT3.5 Turbo",
+    displayName: "GPT3.5-Turbo",
     available: true,
     provider: {
       id: "openai",
@@ -147,7 +147,7 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "google/gemini-pro-1.5",
-    displayName: "Gemini Pro 1.5",
+    displayName: "Gemini-Pro-1.5",
     available: true,
     provider: {
       id: "openai",
@@ -157,7 +157,7 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "anthropic/claude-3-haiku:beta",
-    displayName: "Claude3 Haiku",
+    displayName: "Claude3-Haiku",
     available: true,
     provider: {
       id: "openai",
@@ -167,7 +167,7 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "anthropic/claude-3-sonnet:beta",
-    displayName: "Claude3 Sonnet",
+    displayName: "Claude3-Sonnet",
     available: true,
     provider: {
       id: "openai",
@@ -177,7 +177,7 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "anthropic/claude-3-opus:beta",
-    displayName: "Claude3 Opus",
+    displayName: "Claude3-Opus",
     available: true,
     provider: {
       id: "openai",
@@ -187,7 +187,7 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "cohere/command-r-plus",
-    displayName: "Command R Plus",
+    displayName: "Command-R-Plus",
     available: true,
     provider: {
       id: "openai",
@@ -197,7 +197,7 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "cohere/command-r",
-    displayName: "Command R",
+    displayName: "Command-R",
     available: true,
     provider: {
       id: "openai",
@@ -207,7 +207,7 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "microsoft/wizardlm-2-8x22b",
-    displayName: "WizardLM2 8x22B",
+    displayName: "WizardLM2-8x22B",
     available: true,
     provider: {
       id: "openai",
@@ -217,7 +217,7 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "qwen/qwen-110b-chat",
-    displayName: "通义千问1.5 110B Chat",
+    displayName: "通义千问1.5-110B-Chat",
     available: true,
     provider: {
       id: "openai",
@@ -227,7 +227,7 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "qwen/qwen-2-72b-instruct",
-    displayName: "通义千问2 72B Chat",
+    displayName: "通义千问2-72B-Chat",
     available: true,
     provider: {
       id: "openai",
@@ -237,7 +237,7 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "deepseek/deepseek-chat",
-    displayName: "深度求索V2 Chat",
+    displayName: "深度求索V2-Chat",
     available: true,
     provider: {
       id: "openai",
@@ -247,6 +247,7 @@ export const DEFAULT_MODELS = [
   },
   {
     name: "openrouter/auto",
+    displayName: "自动",
     available: true,
     provider: {
       id: "openai",

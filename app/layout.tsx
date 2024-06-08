@@ -10,7 +10,7 @@ import { GoogleTagManager } from "@next/third-parties/google";
 const serverConfig = getServerSideConfig();
 
 export const metadata = {
-  title: "Illusion's GPT",
+  title: "Illusion's Chat",
   description: "We soar, we roar, from afar.",
   viewport: {
     width: "device-width",
@@ -22,7 +22,7 @@ export const metadata = {
     { media: "(prefers-color-scheme: dark)", color: "#151515" },
   ],
   appleWebApp: {
-    title: "Illusion's GPT",
+    title: "Illusion's Chat",
     statusBarStyle: "default",
   },
 };

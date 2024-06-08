@@ -544,7 +544,7 @@ export function ImagePreviewer(props: {
           </div>
 
           <div>
-            <div className={styles["main-title"]}>Illusion's Chat</div>
+            <div className={styles["main-title"]}>Illusion&apos;s Chat</div>
             <div className={styles["sub-title"]}>
               chat.illusionrealm.com
             </div>

@@ -246,6 +246,15 @@ export const DEFAULT_MODELS = [
     },
   },
   {
+    name: "cognitivecomputations/dolphin-mixtral-8x22b",
+    available: true,
+    provider: {
+      id: "openai",
+      providerName: "Illusion21",
+      providerType: "openai",
+    },
+  },
+  {
     name: "openrouter/auto",
     displayName: "自动",
     available: true,

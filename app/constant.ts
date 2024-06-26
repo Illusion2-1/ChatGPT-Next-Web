@@ -166,7 +166,7 @@ export const DEFAULT_MODELS = [
     },
   },
   {
-    name: "anthropic/claude-3-sonnet:beta",
+    name: "anthropic/claude-3.5-sonnet:beta",
     displayName: "Claude3-Sonnet",
     available: true,
     provider: {
@@ -188,26 +188,6 @@ export const DEFAULT_MODELS = [
   {
     name: "cohere/command-r-plus",
     displayName: "Command-R-Plus",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "cohere/command-r",
-    displayName: "Command-R",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "microsoft/wizardlm-2-8x22b",
-    displayName: "WizardLM2-8x22B",
     available: true,
     provider: {
       id: "openai",
@@ -255,7 +235,7 @@ export const DEFAULT_MODELS = [
     },
   },
   {
-    name: "openrouter/auto",
+    name: "01-ai/yi-large",
     displayName: "自动",
     available: true,
     provider: {

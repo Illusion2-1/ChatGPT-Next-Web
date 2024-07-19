@@ -103,7 +103,7 @@ Latex inline: $x^2$
 Latex block: $$e=mc^2$$
 `;
 
-export const SUMMARIZE_MODEL = "anthropic/claude-3-haiku:beta";
+export const SUMMARIZE_MODEL = "openai/gpt-4o-mini";
 export const GEMINI_SUMMARIZE_MODEL = "google/gemini-pro";
 
 export const KnowledgeCutOffDate: Record<string, string> = {
@@ -136,8 +136,8 @@ export const DEFAULT_MODELS = [
     },
   },
   {
-    name: "openai/gpt-3.5-turbo",
-    displayName: "GPT3.5-Turbo",
+    name: "openai/gpt-4o-mini",
+    displayName: "GPT 4o mini",
     available: true,
     provider: {
       id: "openai",

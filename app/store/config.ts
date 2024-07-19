@@ -46,7 +46,7 @@ export const DEFAULT_CONFIG = {
   models: DEFAULT_MODELS as any as LLMModel[],
 
   modelConfig: {
-    model: "anthropic/claude-3-haiku:beta" as ModelType,
+    model: "openai/gpt-4o-mini" as ModelType,
     temperature: 0.5,
     top_p: 1,
     max_tokens: 4000,

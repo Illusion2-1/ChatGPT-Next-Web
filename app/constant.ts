@@ -235,8 +235,16 @@ export const DEFAULT_MODELS = [
     },
   },
   {
+    name: "meta-llama/llama-3.1-405b-instruct",
+    available: true,
+    provider: {
+      id: "openai",
+      providerName: "Illusion21",
+      providerType: "openai",
+    },
+  },
+  {
     name: "01-ai/yi-large",
-    displayName: "自动",
     available: true,
     provider: {
       id: "openai",

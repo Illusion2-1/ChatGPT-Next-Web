@@ -126,7 +126,7 @@ export const DEFAULT_MODELS = [
     },
   },
   {
-    name: "openai/gpt-4o",
+    name: "openai/gpt-4o-2024-08-06",
     displayName: "GPT-4o",
     available: true,
     provider: {

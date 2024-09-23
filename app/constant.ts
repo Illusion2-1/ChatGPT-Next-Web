@@ -126,16 +126,6 @@ export const DEFAULT_MODELS = [
     },
   },
   {
-    name: "openai/gpt-4o-2024-08-06",
-    displayName: "GPT-4o",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
     name: "openai/gpt-4o-mini",
     displayName: "GPT 4o mini",
     available: true,
@@ -146,105 +136,8 @@ export const DEFAULT_MODELS = [
     },
   },
   {
-    name: "google/gemini-pro-1.5",
-    displayName: "Gemini-Pro-1.5",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
     name: "anthropic/claude-3-haiku:beta",
     displayName: "Claude3-Haiku",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "anthropic/claude-3.5-sonnet:beta",
-    displayName: "Claude3-Sonnet",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "anthropic/claude-3-opus:beta",
-    displayName: "Claude3-Opus",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "cohere/command-r-plus",
-    displayName: "Command-R-Plus",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "qwen/qwen-110b-chat",
-    displayName: "通义千问1.5-110B-Chat",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "qwen/qwen-2-72b-instruct",
-    displayName: "通义千问2-72B-Chat",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "deepseek/deepseek-chat",
-    displayName: "深度求索V2-Chat",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "cognitivecomputations/dolphin-mixtral-8x22b",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "meta-llama/llama-3.1-405b-instruct",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "01-ai/yi-large",
     available: true,
     provider: {
       id: "openai",

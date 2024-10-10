@@ -5,6 +5,7 @@ import { RequestMessage } from "./client/api";
 import { ServiceProvider } from "./constant";
 // import { fetch as tauriFetch, ResponseType } from "@tauri-apps/api/http";
 import { fetch as tauriStreamFetch } from "./utils/stream";
+import tr from "./locales/tr";
 
 export function trimTopic(topic: string) {
   // Fix an issue where double quotes still show in the Indonesian language
@@ -274,17 +275,12 @@ export function isDalle3(model: string) {
 }
 
 export function showPlugins(provider: ServiceProvider, model: string) {
-  if (
-    provider == ServiceProvider.OpenAI ||
-    provider == ServiceProvider.Azure ||
-    provider == ServiceProvider.Moonshot
-  ) {
+  if(model.includes("gpt") ||
+  model.includes("claude-3") ||
+  model.includes("gemini")){
     return true;
   }
-  if (provider == ServiceProvider.Anthropic && !model.includes("claude-2")) {
-    return true;
-  }
-  return false;
+    return false;
 }
 
 export function fetch(

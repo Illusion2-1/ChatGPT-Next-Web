@@ -10,6 +10,7 @@ export const RUNTIME_CONFIG_DOM = "danger-runtime-config";
 
 export const DEFAULT_API_HOST = "https://api.nextchat.dev";
 export const OPENAI_BASE_URL = "https://api.openai.com";
+export const ANTHROPIC_BASE_URL = "https://api.anthropic.com";
 
 export const GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/";
 
@@ -25,6 +26,7 @@ export enum Path {
 export enum ApiPath {
   Cors = "",
   OpenAI = "/api/openai",
+  Anthropic = "/api/anthropic",
 }
 
 export enum SlotID {
@@ -67,12 +69,21 @@ export enum ServiceProvider {
   OpenAI = "OpenAI",
   Azure = "Azure",
   Google = "Google",
+  Anthropic = "Anthropic",
 }
 
 export enum ModelProvider {
   GPT = "GPT",
   GeminiPro = "GeminiPro",
+  Claude = "Claude",
 }
+
+export const Anthropic = {
+  ChatPath: "v1/messages",
+  ChatPath1: "v1/complete",
+  ExampleEndpoint: "https://api.anthropic.com",
+  Vision: "2023-06-01",
+};
 
 export const OpenaiPath = {
   ChatPath: "v1/chat/completions",
@@ -87,65 +98,107 @@ export const Azure = {
 
 export const Google = {
   ExampleEndpoint: "https://generativelanguage.googleapis.com/",
-  ChatPath: "v1beta/models/gemini-pro:generateContent",
-  VisionChatPath: "v1beta/models/gemini-pro-vision:generateContent",
-
-  // /api/openai/v1/chat/completions
+  ChatPath: (modelName: string) => `v1beta/models/${modelName}:generateContent`,
+  VisionChatPath: (modelName: string) => `v1beta/models/${modelName}:generateContent`,
 };
 
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
+// export const DEFAULT_SYSTEM_TEMPLATE = `
+// You are ChatGPT, a large language model trained by {{ServiceProvider}}.
+// Knowledge cutoff: {{cutoff}}
+// Current model: {{model}}
+// Current time: {{time}}
+// Latex inline: $x^2$
+// Latex block: $$e=mc^2$$
+// `;
 export const DEFAULT_SYSTEM_TEMPLATE = `
 You are an intergrated AI designed to chat and do many significantly helpful tasks. The integration was provided by Illusion21.
 Knowledge cutoff: {{cutoff}}
 Current model: {{model}}
 Current time: {{time}}
-Latex inline: $x^2$ 
+Latex inline: \\(x^2\\) 
 Latex block: $$e=mc^2$$
 `;
 
 export const SUMMARIZE_MODEL = "openai/gpt-4o-mini";
-export const GEMINI_SUMMARIZE_MODEL = "google/gemini-pro";
+export const GEMINI_SUMMARIZE_MODEL = "openai/gpt-4o-mini";
+export const ANTHROPIC_SUMMARIZE_MODEL = "openai/gpt-4o-mini"
 
 export const KnowledgeCutOffDate: Record<string, string> = {
-  default: "2024-04",
-  "openai/gpt-4-turbo": "2024-04",
+  default: "2021-09",
+  "gpt-4-turbo": "2023-12",
+  "gpt-4-turbo-2024-04-09": "2023-12",
+  "gpt-4-turbo-preview": "2023-12",
+  "gpt-4-1106-preview": "2023-04",
+  "gpt-4-0125-preview": "2023-12",
+  "gpt-4-vision-preview": "2023-04",
   // After improvements,
   // it's now easier to add "KnowledgeCutOffDate" instead of stupid hardcoding it, as was done previously.
-  "google/gemini-pro-1.5": "2023-12",
+  "gemini-pro": "2023-12",
+  "gemini-pro-vision": "2023-12",
 };
 
+const openaiModels = [
+  "openai/gpt-4o-mini",
+  "anthropic/claude-3-haiku:beta"
+];
+
+const googleModels = [
+  "gemini-1.0-pro",
+  "gemini-1.5-pro-latest",
+  "gemini-pro-vision",
+];
+
+const anthropicModels = [
+  "claude-instant-1.2",
+  "claude-2.0",
+  "claude-2.1",
+  "claude-3-sonnet-20240229",
+  "claude-3-opus-20240229",
+  "claude-3-haiku-20240307",
+];
+
 export const DEFAULT_MODELS = [
-  {
-    name: "openai/gpt-4-turbo",
-    displayName: "GPT4-Turbo",
+  ...openaiModels.map((name) => ({
+    name,
     available: true,
     provider: {
       id: "openai",
       providerName: "Illusion21",
       providerType: "openai",
     },
-  },
-  {
-    name: "openai/gpt-4o-mini",
-    displayName: "GPT 4o mini",
+  })),
+  ...googleModels.map((name) => ({
+    name,
     available: true,
     provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
+      id: "google",
+      providerName: "Google",
+      providerType: "google",
     },
-  },
-  {
-    name: "anthropic/claude-3-haiku:beta",
-    displayName: "Claude3-Haiku",
+  })),
+  ...anthropicModels.map((name) => ({
+    name,
     available: true,
     provider: {
-      id: "openai",
-      providerName: "Illusion21",
-      providerType: "openai",
+      id: "anthropic",
+      providerName: "Anthropic",
+      providerType: "anthropic",
     },
-  }
+  })),
 ] as const;
 
 export const CHAT_PAGE_SIZE = 15;
 export const MAX_RENDER_MSG_COUNT = 45;
+
+// some famous webdav endpoints
+export const internalWhiteWebDavEndpoints = [
+  "https://dav.jianguoyun.com/dav/",
+  "https://dav.dropdav.com/",
+  "https://dav.box.com/dav",
+  "https://nanao.teracloud.jp/dav/",
+  "https://webdav.4shared.com/",
+  "https://dav.idrivesync.com",
+  "https://webdav.yandex.com",
+  "https://app.koofr.net/dav/Koofr",
+];

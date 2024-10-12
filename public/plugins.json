@@ -17,12 +17,12 @@
   {
     "id": "chatpdf",
     "name": "ChatPDF",
-    "schema": "https://raw.githubusercontent.com/ChatGPTNextWeb/NextChat-Awesome-Plugins/refs/heads/main/plugins/chatpdf/openapi.json"
+    "schema": "https://ghp.ci/https://raw.githubusercontent.com/ChatGPTNextWeb/NextChat-Awesome-Plugins/refs/heads/main/plugins/chatpdf/openapi.json"
   },
   {
     "id": "codeinterpretor",
     "name": "Python代码解释器",
-    "schema": "https://raw.githubusercontent.com/ChatGPTNextWeb/NextChat-Awesome-Plugins/refs/heads/main/plugins/codeinterpreterapi/openapi.json"
+    "schema": "https://ghp.ci/https://raw.githubusercontent.com/ChatGPTNextWeb/NextChat-Awesome-Plugins/refs/heads/main/plugins/codeinterpreterapi/openapi.json"
   },
   {
     "id": "gapier",

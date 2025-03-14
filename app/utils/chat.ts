@@ -389,6 +389,7 @@ export function stream(
   chatApi(chatPath, headers, requestPayload, tools); // call fetchEventSource
 }
 
+let thinkingLineStart = false;
 export function streamWithThink(
   chatPath: string,
   requestPayload: any,
@@ -619,29 +620,37 @@ export function streamWithThink(
           const isThinkingChanged = lastIsThinking !== chunk.isThinking;
           lastIsThinking = chunk.isThinking;
 
+          
           if (chunk.isThinking) {
-            // If in thinking mode
+            // 进入思考模式或状态变化时重置
             if (!isInThinkingMode || isThinkingChanged) {
-              // If this is a new thinking block or mode changed, add prefix
               isInThinkingMode = true;
-              if (remainText.length > 0) {
-                remainText += "\n";
-              }
-              remainText += "> " + chunk.content;
-            } else {
-              // Handle newlines in thinking content
-              if (chunk.content.includes("\n\n")) {
-                const lines = chunk.content.split("\n\n");
-                remainText += lines.join("\n\n> ");
-              } else {
-                remainText += chunk.content;
-              }
+              thinkingLineStart = true; // 新思考块开始需要前缀
             }
-          } else {
+
+          let processed = '';
+          let needPrefix = thinkingLineStart;
+
+          // 逐个字符处理内容
+          for (const char of chunk.content) {
+            if (needPrefix) {
+              processed += '> ';
+              needPrefix = false;
+            }
+            processed += char;
+            if (char === '\n') {
+              needPrefix = true; // 换行后下一行需要前缀
+            }
+          }
+          thinkingLineStart = needPrefix;
+            remainText += processed;
+          } 
+          else {
             // If in normal mode
             if (isInThinkingMode || isThinkingChanged) {
               // If switching from thinking mode to normal mode
               isInThinkingMode = false;
+              thinkingLineStart = false;
               remainText += "\n\n" + chunk.content;
             } else {
               remainText += chunk.content;

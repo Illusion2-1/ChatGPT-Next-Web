@@ -153,7 +153,6 @@ export const getServerSideConfig = () => {
     )
       defaultModel = "";
     }
-  }
 
   const isStability = !!process.env.STABILITY_API_KEY;
 

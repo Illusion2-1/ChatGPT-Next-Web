@@ -1,3 +1,4 @@
+import { jest } from "@jest/globals";
 import { isVisionModel } from "../app/utils";
 
 describe("isVisionModel", () => {

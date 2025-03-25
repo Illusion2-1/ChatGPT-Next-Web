@@ -2,27 +2,27 @@
   {
     "id": "dalle3",
     "name": "Dalle3",
-    "schema": "https://ghp.ci/https://raw.githubusercontent.com/ChatGPTNextWeb/NextChat-Awesome-Plugins/main/plugins/dalle/openapi.json"
+    "schema": "https://ghgo.xyz/https://raw.githubusercontent.com/ChatGPTNextWeb/NextChat-Awesome-Plugins/main/plugins/dalle/openapi.json"
   },
   {
     "id": "arxivsearch",
     "name": "ArxivSearch",
-    "schema": "https://ghp.ci/https://raw.githubusercontent.com/ChatGPTNextWeb/NextChat-Awesome-Plugins/main/plugins/arxivsearch/openapi.json"
+    "schema": "https://ghgo.xyz/https://raw.githubusercontent.com/ChatGPTNextWeb/NextChat-Awesome-Plugins/main/plugins/arxivsearch/openapi.json"
   },
   {
     "id": "duckduckgolite",
     "name": "DuckDuckGoLite网页搜索",
-    "schema": "https://ghp.ci/https://raw.githubusercontent.com/ChatGPTNextWeb/NextChat-Awesome-Plugins/main/plugins/duckduckgolite/openapi.json"
+    "schema": "https://ghgo.xyz/https://raw.githubusercontent.com/ChatGPTNextWeb/NextChat-Awesome-Plugins/main/plugins/duckduckgolite/openapi.json"
   },
   {
     "id": "chatpdf",
     "name": "ChatPDF",
-    "schema": "https://ghp.ci/https://raw.githubusercontent.com/ChatGPTNextWeb/NextChat-Awesome-Plugins/refs/heads/main/plugins/chatpdf/openapi.json"
+    "schema": "https://ghgo.xyz/https://raw.githubusercontent.com/ChatGPTNextWeb/NextChat-Awesome-Plugins/refs/heads/main/plugins/chatpdf/openapi.json"
   },
   {
     "id": "codeinterpretor",
     "name": "Python代码解释器",
-    "schema": "https://ghp.ci/https://raw.githubusercontent.com/ChatGPTNextWeb/NextChat-Awesome-Plugins/refs/heads/main/plugins/codeinterpreterapi/openapi.json"
+    "schema": "https://ghgo.xyz/https://raw.githubusercontent.com/ChatGPTNextWeb/NextChat-Awesome-Plugins/refs/heads/main/plugins/codeinterpreterapi/openapi.json"
   },
   {
     "id": "gapier",

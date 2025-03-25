@@ -335,7 +335,9 @@ export function supportsCustomSize(model: string): boolean {
 export function showPlugins(provider: ServiceProvider, model: string) {
   if(model.includes("gpt") ||
   model.includes("claude-3") ||
-  model.includes("gemini")){
+  model.includes("gemini") ||
+  model.includes("deepseek-chat")
+  ) {
     return true;
   }
     return false;

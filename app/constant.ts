@@ -408,7 +408,7 @@ You are an AI assistant with access to system tools. Your role is to help users 
    
 `;
 
-export const SUMMARIZE_MODEL = "mistralai/mistral-small-24b-instruct-2501:free";
+export const SUMMARIZE_MODEL = "featherless/qwerky-72b:free";
 export const GEMINI_SUMMARIZE_MODEL = "openai/gpt-4o-mini";
 export const DEEPSEEK_SUMMARIZE_MODEL = "deepseek-chat";
 export const ANTHROPIC_SUMMARIZE_MODEL = "openai/gpt-4o-mini"
@@ -476,8 +476,7 @@ export const EXCLUDE_VISION_MODEL_REGEXES = [/claude-3-5-haiku-20241022/];
 
 const openaiModels = [
   "openai/gpt-4o-mini",
-  "anthropic/claude-3-haiku:beta",
-  "mistralai/mistral-small-24b-instruct-2501:free" // 作总结模型用
+  "featherless/qwerky-72b:free" // 作总结模型用
 ];
 
 const googleModels = [

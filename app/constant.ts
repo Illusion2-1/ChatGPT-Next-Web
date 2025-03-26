@@ -476,7 +476,6 @@ export const EXCLUDE_VISION_MODEL_REGEXES = [/claude-3-5-haiku-20241022/];
 
 const openaiModels = [
   "openai/gpt-4o-mini",
-  "anthropic/claude-3-haiku:beta",
   "mistralai/mistral-small-24b-instruct-2501:free" // 作总结模型用
 ];
 

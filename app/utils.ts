@@ -336,7 +336,8 @@ export function showPlugins(provider: ServiceProvider, model: string) {
   if(model.includes("gpt") ||
   model.includes("claude-3") ||
   model.includes("gemini") ||
-  model.includes("deepseek-chat")
+  model.includes("deepseek-chat") ||
+  model.match("openrouter/quasar-alpha")
   ) {
     return true;
   }

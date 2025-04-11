@@ -337,7 +337,7 @@ export function showPlugins(provider: ServiceProvider, model: string) {
   model.includes("claude-3") ||
   model.includes("gemini") ||
   model.includes("deepseek-chat") ||
-  model.match("openrouter/quasar-alpha")
+  model.includes("grok")
   ) {
     return true;
   }
